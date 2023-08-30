@@ -21,6 +21,7 @@ inputs = {
 
   region      = "us-east-2"
   environment = "test"
+  name        = "example"
 
   secret_version = {
     secret_string = jsonencode(
