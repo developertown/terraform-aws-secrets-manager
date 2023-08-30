@@ -75,8 +75,8 @@ func TestExamplesComplete(t *testing.T) {
 		secretID := terraform.Output(t, terraformOptions, "id")
 
 		// Verify we're getting back the outputs we expect
-		assert.Contains(t, secretArn, "test-example")
-		assert.Contains(t, secretID, "test-example")
+		assert.Contains(t, secretArn, "example-test")
+		assert.Contains(t, secretID, "example-test")
 
 		// This will run `terraform apply` a second time and fail the test if there are any errors
 		terraform.TgApplyAll(t, terraformOptions)
