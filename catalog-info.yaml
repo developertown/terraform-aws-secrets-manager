@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: terraform-aws-secrets-manager
+  description: AWS Secrets Manager terraform module
+  annotations:
+    github.com/project-slug: developertown/terraform-aws-secrets-manager
+  tags:
+    - terraform
+    - aws
+    - secrets
+    - environments
+spec:
+  type: terraform-module
+  lifecycle: production
+  owner: dt-devops
